@@ -1,0 +1,42 @@
+apiVersion: samplecontroller.k8s.io/v1alpha1
+kind: Foo
+metadata:
+  name: example-foo
+spec:
+  deploymentName: example-foo
+  replicas: 1
+
+
+# You could then create for example Service and Ingress (if needed) for this
+# newly created Foo
+  
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: foo-service
+# spec:
+#   ports:
+#     - name: http
+#       protocol: TCP
+#       port: 80
+#       targetPort: 80
+#   selector:
+#     # sample-controller creates Deployment with these labels when Foo resource
+#     # is deployed
+#     app: nginx
+#     controller: example-foo
+# ---
+# apiVersion: networking.k8s.io/v1beta1
+# kind: Ingress
+# metadata:
+#   name: foo-ingress
+# spec: 
+#   rules:
+#   - host: foo.10.96.0.1.xip.io
+#     http:
+#       paths: 
+#       - path: /
+#         backend:
+#           serviceName: foo-service
+#           servicePort: 80
