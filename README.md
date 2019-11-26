@@ -3,6 +3,8 @@
 This repo contains source files for creating simple controller for your own
 CustomResource.
 
+Workshop was held for Comiq at 26.11.2019.
+
 ## Resources
 
 - [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
