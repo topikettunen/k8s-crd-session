@@ -3,7 +3,7 @@
 This repo contains source files for creating simple controller for your own
 CustomResource.
 
-Workshop was held for Comiq at 26.11.2019.
+Workshop was held for ALTEN/Comiq at 26.11.2019.
 
 ## Resources
 
