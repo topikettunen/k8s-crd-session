@@ -7,6 +7,8 @@ Workshop was held for Comiq at 26.11.2019.
 
 ## Resources
 
+- [Kubernetes - Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+
 - [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
 
   - Dockerfile for controller can be found from [topikettunen/sample-controller](https://github.com/topikettunen/sample-controller/tree/add-dockerfile)
