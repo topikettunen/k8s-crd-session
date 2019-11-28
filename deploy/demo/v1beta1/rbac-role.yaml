@@ -1,0 +1,28 @@
+kind: ClusterRole
+metadata:
+  name: operator-role
+rules:
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - samplecontroller.k8s.io
+  resources:
+  - foos
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
